@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início - Spotify</title>
+    <link rel="icon" href="./img/logo_spotify.png">
+
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/asideLeft.css">
+    <link rel="stylesheet" href="./style/navbar.css">
+    <link rel="stylesheet" href="./style/relevant.css">
+    <link rel="stylesheet" href="./style/player.css">
+    <link rel="stylesheet" href="./style/recommended.css">
+
+    <script src="./script/navbar.js" defer></script>
+    <script src="./script/likedHover.js" defer></script>
+    <script src="./script/music.js" defer></script>
+    <script src="./script/playingAudio.js" defer></script>
+</head>
+
+<body>
+
+    <aside class="aside-left">
+
+        <div class="">
+            <div class="ret">
+                <div class="ellipsis"></div>
+            </div>
+
+            <ul class="list">
+                <li class="active"><a href=""><i class="fas fa-home"></i>Início</a></li>
+                <li><a href=""><i class="fas fa-search"></i>Buscar</a></li>
+                <li><a href=""><i class="fas fa-book-reader"></i>Sua Biblioteca</a></li>
+            </ul>
+
+            <ul class="list list-ms">
+                <li><a href=""><i class="fas fa-plus-square"></i>Criar Playlist</a></li>
+                <li><a href=""><i class="fas fa-heart"></i>Músicas Curtidas</a></li>
+            </ul>
+
+            <div class="border"></div>
+
+            <ul class="playlist">
+                <li><a href="">old rap</a></li>
+                <li><a href="">alguma playlist por aí</a></li>
+            </ul>
+
+        </div>
+    </aside>
+    <!--Aside Left-->
+
+    <section class="section-music">
+
+        <div class="navbar">
+            <div class="arrows">
+                <button><i class="fas fa-arrow-left"></i></button>
+                <button><i class="fas fa-arrow-right"></i></button>
+            </div>
+            <div class="info">
+                <a class="upgrade">Faça upgrade</a>
+                <ul>
+                    <li class="profile"><img class="img-profile" src="./img/profile.jpg">doug_ <span
+                            class="icon-profile"><i class="fas fa-sort-down"></i></span>
+                        <ul class="dropdown">
+                            <li><a href="">Conta <i class="fas fa-external-link-alt"></i></a></li>
+                            <li><a href="">Perfil</a></li>
+                            <li><a href="">Faça upgrade para o Premium <i class="fas fa-external-link-alt"></i></a></li>
+                            <li><a href="">Sair</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div> <!-- Navbar -->
+
+        <div class="relevant">
+            <p>Boa noite</p>
+
+            <div class="itens">
+                <div class="music-liked inTrance">
+                    <img src="./img/music_InTrance.jpg" alt="">
+                    <div>
+                        <span>In Trance - Studio Edit</span>
+                        <button id="btnScorpions"><i class="fas fa-play"></i></button>
+                    </div>
+                </div>
+                <div class="music-liked fearOfTheDark">
+                    <img src="./img/music_FearOfTheDark.jpg" alt="">
+                    <div>
+                        <span>Fear of the Dark - 2015 Remaster</span>
+                        <button id="btnIronMaden"><i class="fas fa-play"></i></button>
+                    </div>
+                </div>
+                <div class="music-liked michael">
+                    <img src="./img/music_BillieJean.jpg" alt="">
+                    <div>
+                        <span>Billie Jean</span>
+                        <button id="btnMichael"><i class="fas fa-play"></i></button>
+                    </div>
+                </div>
+                <div class="music-liked metallica">
+                    <img src="./img/music_Metallica.jpg" alt="">
+                    <div>
+                        <span>Nothing Else Matters</span>
+                        <button id="btnMetallica"><i class="fas fa-play"></i></button>
+                    </div>
+                </div>
+                <div class="music-liked audioSlave">
+                    <img src="./img/music_AudioSlave.jpg" alt="">
+                    <div>
+                        <span>Like a Stone</span>
+                        <button id="btnAudioSlave"><i class="fas fa-play"></i></button>
+                    </div>
+                </div>
+                <div class="music-liked guns">
+                    <img src="./img/music_Guns.jpg" alt="">
+                    <div>
+                        <span>Sweet Child O' Mine</span>
+                        <button id="btnGuns"><i class="fas fa-play"></i></button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="recommended">
+            <p class="title">Recomendados</p>
+            <div class="container">
+                <div class="item">
+                    <img src="./img/hipsters.jpg">
+                    <p>Hipsters Ponto Tech</p>
+                    <span>Alura</span>
+                </div>
+                <div class="item">
+                    <img src="./img/entreTech.jpg">
+                    <p>Entre Tech </p>
+                    <span>Entre Tech </span>
+                </div>
+                <div class="item">
+                    <img src="./img/canalTech.jpg">
+                    <p>Canaltech Podcast</p>
+                    <span>Canaltech</span>
+                </div>
+                <div class="item">
+                    <img src="./img/tecnicalidade.jpg">
+                    <p>Tecnicalidade</p>
+                    <span>Tecnicalidade</span>
+                </div>
+                <div class="item">
+                    <img src="./img/braincast.jpg">
+                    <p>Braincast</p>
+                    <span>B9</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="recommended">
+            <p class="title">Playlists</p>
+            <div class="container">
+                <div class="item">
+                    <div>
+                        <img src="./img/rock.jpg">
+                        <button class="initialPlaylist"><i class="fas fa-play"></i></button>
+                    </div>
+                    <p>Playlist de Rock</p>
+                    <span>Playlist</span>
+                </div>
+            </div>
+        </div>
+
+        <audio style="display: none; opacity: 0; z-index: -1000;" controls id="player">
+            <source src="" type="audio/mpeg">
+        </audio>
+
+    </section>
+
+    <div class="player">
+        <div class="music-information">
+            <img class="imageMusic" src="./img/artist.png" alt="">
+            <div class="artist">
+                <span class="music">Música</span>
+                <span class="artist-name">Artista</span>
+            </div>
+            <a><i class="far fa-heart"></i></a>
+        </div>
+        <div class="player-controls">
+            <div class="controls">
+                <button><i class="fas fa-random"></i></button>
+                <button class="music-left"><i class="fas fa-step-backward"></i></button>
+                <div>
+                    <button class="play"><i class="fas fa-play"></i></button>
+                    <button class="paused"><i class="fas fa-pause"></i></button>
+                </div>
+                <button class="music-rigth"><i class="fas fa-step-forward"></i></button>
+                <button><i class="fas fa-sync-alt"></i></button>
+            </div>
+            <div class="bar"></div>
+        </div>
+        <div class="audio">
+            <i class="fas fa-volume-up"></i>
+            <div class="bar"></div>
+        </div>
+    </div>
+
+
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-search-pseudo-elements></script>
+    <!--Script Font Awesome-->
+
+</body>
+
+</html>

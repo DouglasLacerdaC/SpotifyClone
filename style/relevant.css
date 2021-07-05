@@ -1,0 +1,75 @@
+.relevant{
+    padding: 30px 30px 0 30px;
+}
+
+.relevant p{
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.relevant .itens{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1066px;
+    margin: 0 auto;
+}
+
+.relevant .music-liked{
+    display: flex;
+    margin: 0 15px 15px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ffffff1f;
+    transition: 200ms;
+}
+
+.relevant .music-liked img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px 0 0 5px;
+    box-shadow: 0 8px 24px rgb(0 0 0 / 50%);
+}
+
+.relevant .music-liked div{
+    max-width: 1066px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    flex-grow: 1;
+    border-radius: 0 5px 5px 0;
+    transition: 400ms;
+}
+
+.relevant .music-liked:hover{background: #ffffff41;}
+.relevant .music-liked:hover button{opacity: 1;}
+
+.relevant .music-liked div span{
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    width: 170px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.relevant .music-liked div button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    background-color: #1db954;
+    border: none;
+    box-shadow: 0 8px 8px rgb(0 0 0 / 30%);
+    opacity: 0;
+    transition: opacity 400ms;
+}
+
+.relevant .music-liked div button:hover{transform: scale(1.1);}
+
+.relevant .music-liked div button svg{transform: translate(2px, 1px);}

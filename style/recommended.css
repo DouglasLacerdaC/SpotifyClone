@@ -1,0 +1,76 @@
+.recommended{
+    padding: 0 30px;
+}
+
+.recommended .title{
+    margin: 16px 0;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.recommended .title:hover{text-decoration: underline;}
+
+.recommended .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.recommended .container .item{
+    background-color: #181818;
+    padding: 15px;
+    cursor: pointer;
+    transition: 400ms;
+    margin-bottom: 20px;
+}
+
+.recommended .container .item:hover{background-color: #282828;}
+
+.recommended .container .item div{
+    position: relative;
+}
+
+.recommended .container .item div button{
+    position: absolute;
+    bottom: 0;
+    right: 12px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    background-color: #1db954;
+    border: none;
+    box-shadow: 0 8px 8px rgb(0 0 0 / 30%);
+    transition: 400ms;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.recommended .container .item:hover div button{
+    opacity: 1;
+    transform: translateY(-15px);
+}
+
+.recommended .container .item img{
+    width: 157px;
+    height: 157px;
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgb(0 0 0 / 50%);
+}
+
+.recommended .container .item p{
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.recommended .container .item span{
+    display: block;
+    color: #ffffffa6;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}

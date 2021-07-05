@@ -1,0 +1,101 @@
+.aside-left{
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    width: 240px;
+    height: calc(100% - 101px);
+    padding: 0 7px;
+    background-color: #000000;
+    color: #b3b3b3;
+    overflow: auto;
+}
+
+.aside-left .ret{
+    padding: 25px;
+    color: #ffffff;
+}
+
+.ellipsis{
+    position: relative;
+    width: 5px;
+    height: 5px;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+.ellipsis::before,
+.ellipsis::after{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+.ellipsis::before{
+    left: 10px;
+}
+
+.ellipsis::after{
+    left: 20px;
+}
+
+.aside-left svg{font-size: 22px;}
+.aside-left .list{font-size: 14px;}
+
+.aside-left .list-ms{
+    margin-top: 20px;
+    padding-bottom: 5px;
+}
+
+.aside-left .list .active{
+    background-color: #f7f7f71f;
+    color: #ffffff;
+}
+
+.aside-left .list li{
+    padding: 0 0 0 10px;
+    border-radius: 3px;
+    font-size: 13px;
+}
+
+.aside-left .list li svg{margin: 0px 15px 0 5px;}
+
+.aside-left .list li a{
+    display: block;
+    padding: 7px 0;
+    color: #b3b3b3;
+    transition: 200ms;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+}
+
+.aside-left .list .active a{color: #ffffff;}
+.aside-left .list li:hover a{color: #ffffff;}
+
+.border{
+    height: 1px;
+    width: 210px;
+    background-color: #ffffff23;
+    margin: 2px auto;
+}
+
+.aside-left .playlist li{
+    padding: 0 0 0 10px;
+}
+
+.aside-left .playlist li a{
+    display: block;
+    color: #b3b3b3;
+    padding: 12px 0 0 0;
+    font-family: Helvetica;
+    transition: 200ms;
+    font-size: 14px;
+}
+
+.aside-left .playlist li a:hover{
+    color: #ffffff;
+}

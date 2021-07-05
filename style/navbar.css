@@ -1,0 +1,128 @@
+.section-music{
+    position: fixed;
+    background: linear-gradient(to bottom, rgb(117, 51, 17), #0c0c0c 30%);
+    background-color: #0c0c0c;
+    left: 240px;
+    width: calc(100% - 240px);
+    height: calc(100% - 102px);
+    transition: background 10s ease;
+    overflow: auto;
+    z-index: 1000;
+}
+
+.section-music .navbar{
+    position: sticky;
+    top: 0;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 600ms;
+    z-index: 1000;
+}
+
+.section-music .navbar-fixed{background-color: #5d2306;}
+
+.section-music .navbar .arrows button{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    background-color: #00000057;
+    color: #ffffffa1;
+    font-size: 14px;
+    border: none;
+    border-radius: 50%;
+    cursor: not-allowed;
+}
+
+.section-music .navbar .info{
+    display: flex;
+    align-items: center;
+}
+
+.section-music .navbar .info .upgrade{
+    display: block;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #000000a6;
+    color: #ffffff;
+    padding: 6px 35px;
+    border: 1px solid #ffffff;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.section-music .navbar .info .upgrade:hover{transform: scale(1.05); background-color: #000000;}
+
+.section-music .navbar .info ul{
+    position: relative;
+}
+
+.section-music .navbar .info ul .profile{
+    background-color: #000000a6;
+    padding: 2px;
+    margin: 0 0 0 20px;
+    color: #ffffff;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    border-radius: 23px;
+    cursor: pointer;
+}
+
+.section-music .navbar .info ul .profile:hover{
+    background-color: #282828;
+}
+
+.section-music .navbar .info ul .profile .icon-profile svg{
+    margin: 0 12px;
+    font-size: 15px;
+    transform: translateY(-2px);
+    transition: 200ms;
+}
+
+.section-music .navbar .info ul .profile .rotate{transform: rotate(-180deg);}
+
+.section-music .navbar .info ul .img-profile{
+    margin-right: 10px;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.section-music .navbar .info ul .dropdown{
+    display: none;
+    position: absolute;
+    top: 45px;
+    right: 0;
+    background-color: #282828;
+    color: #ffffff;
+    padding: 5px;
+    box-shadow: 0 16px 24px rgb(0 0 0 / 30%), 0 6px 8px rgb(0 0 0 / 20%);
+    z-index: 1000;
+}
+
+.section-music .navbar .info ul .dropdown-visible{display: block;}
+
+.section-music .navbar .info ul .dropdown a{
+    color: #ffffff;
+    font-family: Helvetica;
+    font-weight: 200;
+    padding: 15px 20px;
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 3px;
+}
+
+.section-music .navbar .info ul .dropdown a svg{
+    margin-left: 5px;
+}
+
+.section-music .navbar .info ul .dropdown a:hover{
+    background-color: #3e3e3e;
+}
