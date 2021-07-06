@@ -15,7 +15,9 @@
 .recommended .container{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    max-width: 10066px;
+    margin: 0 auto;
 }
 
 .recommended .container .item{
@@ -23,7 +25,7 @@
     padding: 15px;
     cursor: pointer;
     transition: 400ms;
-    margin-bottom: 20px;
+    margin:0 20px 20px 0;
 }
 
 .recommended .container .item:hover{background-color: #282828;}
@@ -65,6 +67,10 @@
     font-size: 15px;
     font-weight: bold;
     margin-top: 10px;
+    max-width: 157px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .recommended .container .item span{
