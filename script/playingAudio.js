@@ -141,8 +141,8 @@ musicLeft.addEventListener('click', () =>{
                 playlist2[x].audio)
                 console.log(x)
         }else{
-            infoPlayer(playlist[x].music, playlist[x].artist, playlist[x].image,
-                playlist[x].audio)
+            infoPlayer(playlist2[x].music, playlist2[x].artist, playlist2[x].image,
+                playlist2[x].audio)
         }
     }else{
         if(x < 0){
